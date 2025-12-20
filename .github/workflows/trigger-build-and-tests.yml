@@ -63,7 +63,7 @@ jobs:
   # Filter build handling : push in master, commits in PR, comments in PR and dispatch
   filter_build:
     permissions: 
-      issues: write
+      statuses: write
       pull-requests: write
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'sofa-framework' }}
